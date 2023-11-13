@@ -1,0 +1,227 @@
+
+
+
+
+/* tablet responsive */
+
+@media  (max-width: 972px) {
+
+    .container-width{
+        max-width: 972px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+   .head-menu,.social-icon{
+    display:none;
+   }
+
+/* hero  */
+    .hero-post{
+    grid-template-areas:
+    "post-one post-one "
+    "post-two post-three"
+    ;
+    }
+
+    .hero-post-3{
+    flex-direction: column;
+    }
+
+
+    /* post ad  */
+
+    .post-ads{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+
+   
+    .gallery{
+            grid-template-areas: "gallery-1 gallery-2"
+                                 "gallery-3 gallery-3";    
+                                
+    }
+   
+   
+   .gallery-3{
+    display: flex;
+
+   }
+.gallery-3-side{
+    flex-direction: row;
+}
+   .ad-section{
+    display: none;
+   }
+
+
+   .latest-gallery{
+    grid-template-areas: "latest-1 latest-1 "
+                           
+                        "  latest-2 latest-2";
+    gap: 61px;
+}
+   .follow{
+    gap: 50px;
+   }
+   .follow-1,.follow-2{
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .border-2{
+    display: none;
+   }
+
+   .follow-2{
+    display: flex;
+    justify-content: space-around;
+   }
+   .tag-section,.side-ad,.foot-menu-section{
+    display: none;
+   }
+
+   .footer-section{
+    grid-template-columns: 1fr 1fr;
+   }
+   .popular-foot-2{
+    display: none;
+   }
+}
+  
+/* mobile responsive  */
+
+@media (max-width:576px){
+
+    .container-width{
+        max-width: 576px;
+        margin: 0 auto;
+        
+        
+    } 
+    /* header */
+    .head-menu,.social,.s-btn{
+    display: none;
+    }
+    .logo{
+        justify-content: space-between;
+      
+    }
+   
+    /* hero  */
+    .hero-post{
+        grid-template-areas:
+        "post-one "
+        "post-two "
+        "post-three";
+    }
+    .hero-post-3{
+        flex-direction: column;
+    }
+
+
+   .single-ad{
+    flex-direction: column;
+    position: relative;
+   
+   } 
+   .post-ads{
+    flex-direction: column;
+   }
+
+.single-ad-text{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    
+}
+.single-ad >img {
+    width: fit-content;
+    object-fit: cover;
+    height: 100%;
+    margin: 0 22px 0 0;
+    border-radius: 6px;
+}
+.category{
+    display: none;
+}
+
+.gallery{
+    grid-template-areas: "gallery-1 "
+                         "gallery-2 ";    
+                        
+}
+.gallery-3,.popular-foot,.popular-foot-2{
+    display: none;
+}
+
+.small{
+    flex-direction: row;
+}
+
+.latest-gallery{
+    grid-template-areas: "latest-1 "
+                        "latest-2";
+    gap: 61px;
+}
+.latest-1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img.mar-30{
+    width: ;
+}
+.latest-content{
+    width: 70%;
+}
+
+.follow-1{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.follow-post{
+    flex-wrap: wrap;
+    width: 48%;
+}
+.latest-grid>div>img{
+    width: 80%;
+}
+
+.cate{
+    display: none;
+}
+.pagination{
+    display: flex;
+    gap: 8px;
+    margin: 10px 10px;
+    justify-content:center;
+
+    list-style: none;
+}
+li.none{
+    display: none;
+}
+
+   .footer-section{
+    grid-template-columns: 1fr ;
+   }
+   .footlogo{
+    text-align: center;
+   }
+
+   .copy{
+    text-align: center;
+   }
+   .foot-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   }
+
+}

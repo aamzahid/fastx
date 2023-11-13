@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FastX</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/18feab2c0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
         
     <header>
        <section class="top-area">
-        <div class="container-width flex justify-between align-center">
+        <div class="header-top container-width flex justify-between align-center">
             <div class="logo flex align-center ">
                 <div class="burger" >
                     <div></div>
@@ -22,12 +23,37 @@
                     <img class="logo-img" src="asset/postx-logo.svg" alt="">
                 </div>
             </div>
-            <div class=" ">
+            <div class="head-menu ">
                 <ul class=" menu flex justify-between align-center">
                     <li><a href="">Home</a></li>
                     <li><a href="">Travel</a></li>
-                    <li><a href="">Fashion</a></li>
-                    <li><a href="">Lifestyle</a></li>
+                    <div class="flex justify-center align-center">
+                        <li><a href="">Fashion</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Category 1</a>
+                            <a href="#">Category 2</a>
+                            <a href="#">Category 3</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-center align-center">
+                        <li><a href="">Lifestyle</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn ">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Category 1</a>
+                            <a href="#">Category 2</a>
+                            <a href="#">Category 3</a>
+                        </div>
+                    </div>
+                    </div>
+                    
                                     
                     <li><a href="">Contact US</a></li>
                 </ul>
@@ -39,7 +65,7 @@
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div>
+                <div class="s-btn">
                     <a class="subscribe-button" href="#">Subscribe</a>
                 </div>
             </div>
@@ -128,7 +154,7 @@
             <div class="post-ads flex justify-between align-center">
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
+                    <div class="single-ad-text flex flex-column">
                         <p class="category bg-indigo">Travel</p>
                         <h3>Together happy feelings 
                             continue juvenile one had</h3>
@@ -141,7 +167,7 @@
                 </div>
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
-                    <div>
+                    <div class="single-ad-text">
                         <p class="category bg-green">Travel</p>
                         <h3>Together happy feelings 
                             continue juvenile one had</h3>
@@ -154,7 +180,7 @@
                 </div>
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column gap">
+                    <div class="single-ad-text flex flex-column gap">
                         <p class="category bg-purple">Travel</p>
                         <h3>Together happy feelings 
                             continue juvenile one had</h3>
@@ -188,8 +214,8 @@
                             </div>
                     </div>
                     <!-- small post  -->
-                     <div class="flex flex-column gap-40">
-                        <div class="single-ad flex">
+                     <div class="flex flex-column gap-40 ">
+                        <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
                                 <p class="category bg-indigo">Travel</p>
@@ -202,7 +228,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="single-ad flex">
+                        <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
                                 <p class="category bg-indigo">Travel</p>
@@ -235,7 +261,7 @@
                     </div>
                     <!-- small post  -->
                     <div class="flex flex-column gap-40">
-                        <div class="single-ad flex">
+                        <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
                                 <p class="category bg-indigo">Travel</p>
@@ -248,7 +274,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="single-ad flex">
+                        <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
                                 <p class="category bg-indigo">Travel</p>
@@ -266,65 +292,69 @@
                 <div class="gallery-3">
                     <h3 class="bold font-24">Follow Us</h3>
                     <hr class="clicked">
-                    <div class="follow-social flex ">
-                        <p class="bg-sky"><i class="fa-brands fa-facebook-f"></i> Facebook</p>
-                        <p class="bg-sky "><i class="fa-brands fa-twitter"></i> Twitter</p>
-                        <p class="bg-blue"><i class="fa-brands fa-tiktok"></i> Tiktok</p>
-                        <p class="bg-sky"><i class="fa-brands fa-linkedin-in"></i> linkedin</p>
-                        <p class="bg-orange"><i class="fa-brands fa-youtube"></i> Youtube</p>
-                        <p class="bg-orange"><i class="fa-brands fa-reddit"></i> Redit</p>
-                        <p class="bg-purple"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                        <p class="bg-orange"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                        <p class="bg-indigo"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                       <p class="bg-sky"><i class="fa-brands fa-instagram"></i> Instagram</p>
-                       <p class="bg-green"><i class="fa-brands fa-github"></i> Github</p>
-
-                    </div>
-
-                    <!-- popular post  -->
-                 
-                    <div class="border-2">
-                        <div class="popular-post flex flex-column" >
-                            <h3 class="font-24 popular-head">Popular Posts</h3>
-                            <div>
-                                <h3 class="font-16">Day advantages ender adjsd
-                                    icient eat expression</h3>
-                                    <div class="author grey font-12 ">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
-                                    </div>
-                                    <hr class="popular-sep">
+                    <div class="flex flex-column gallery-3-side">
+                        <div class="side-gallery-content flex flex-column">
+                            <div class="follow-social flex ">
+                                <p class="bg-sky"><i class="fa-brands fa-facebook-f"></i> Facebook</p>
+                                <p class="bg-sky "><i class="fa-brands fa-twitter"></i> Twitter</p>
+                                <p class="bg-blue"><i class="fa-brands fa-tiktok"></i> Tiktok</p>
+                                <p class="bg-sky"><i class="fa-brands fa-linkedin-in"></i> linkedin</p>
+                                <p class="bg-orange"><i class="fa-brands fa-youtube"></i> Youtube</p>
+                                <p class="bg-orange"><i class="fa-brands fa-reddit"></i> Redit</p>
+                                <p class="bg-purple"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
+                                <p class="bg-orange"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
+                                <p class="bg-indigo"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
+                               <p class="bg-sky"><i class="fa-brands fa-instagram"></i> Instagram</p>
+                               <p class="bg-green"><i class="fa-brands fa-github"></i> Github</p>
+        
                             </div>
-                            <div>
-                                <h3 class="font-16">Day advantages ender adjsd
-                                    icient eat expression</h3>
-                                    <div class="author grey font-12 ">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
+        
+                            <!-- popular post  -->
+                         
+                            <div class="border-2">
+                                <div class="popular-post flex flex-column" >
+                                    <h3 class="font-24 popular-head">Popular Posts</h3>
+                                    <div>
+                                        <h3 class="font-16">Day advantages ender adjsd
+                                            icient eat expression</h3>
+                                            <div class="author grey font-12 ">
+                                                <img src="asset/aamzahid.jpg" alt="">
+                                                <p>Al Mahmud</p>
+                                            
+                                            </div>
+                                            <hr class="popular-sep">
                                     </div>
-                                    <hr class="popular-sep">
-                            </div>
-                            <div>
-                                <h3 class="font-16">Day advantages ender adjsd
-                                    icient eat expression</h3>
-                                    <div class="author grey font-12 ">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
+                                    <div>
+                                        <h3 class="font-16">Day advantages ender adjsd
+                                            icient eat expression</h3>
+                                            <div class="author grey font-12 ">
+                                                <img src="asset/aamzahid.jpg" alt="">
+                                                <p>Al Mahmud</p>
+                                            
+                                            </div>
+                                            <hr class="popular-sep">
                                     </div>
-                                    <hr class="popular-sep">
-                            </div>
-                            <div>
-                                <h3 class="font-16">Day advantages ender adjsd
-                                    icient eat expression</h3>
-                                    <div class="author grey font-12 ">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
+                                    <div>
+                                        <h3 class="font-16">Day advantages ender adjsd
+                                            icient eat expression</h3>
+                                            <div class="author grey font-12 ">
+                                                <img src="asset/aamzahid.jpg" alt="">
+                                                <p>Al Mahmud</p>
+                                            
+                                            </div>
+                                            <hr class="popular-sep">
                                     </div>
-                                   
+                                    <div>
+                                        <h3 class="font-16">Day advantages ender adjsd
+                                            icient eat expression</h3>
+                                            <div class="author grey font-12 ">
+                                                <img src="asset/aamzahid.jpg" alt="">
+                                                <p>Al Mahmud</p>
+                                            
+                                            </div>
+                                           
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,12 +372,13 @@
             <div class="ad">
                 <div class="ad-content">
                     <div class="flex justify-between align-center">
-                       <div>
+                       <div class="flex align-center gap-30">
                         <img class="ad-img" src="asset/postx-logo.svg" alt="">
-                       </div>
+                       
                         <div class="white font-22">|</div>
-                        <h3 class="white font-22">#1 FullSite News Magazine 
+                        <h3 class="white font-22">#1 FullSite News Magazine <br>
                             and Blog Theme</h3>
+                        </div>
                             <div class="btn-border">
                                 <a class="blue download-btn font-16" href="">Free Download</a>
                             </div>
@@ -359,11 +390,15 @@
 
 <!-- latest post  -->
 <section class="container-width">
-    <div class="latest grid">
-        <div class="gallery-1">
+    <div class="latest ">
+        
             <h3 class="bold font-24">Life Style</h3>
-            <hr class="clicked">
-           <div class="latest-grid ">
+        <hr class="clicked latest-hr ">
+       
+        <div class="latest-gallery grid ">
+            
+           <div class="latest-grid latest-1">
+           
                 <div>
                     <img class="mar-30" src="asset/Image-2.png" alt="">
                     <div class="latest-content flex flex-column gap">
@@ -471,92 +506,141 @@
                                 a total phenomenon for civilization, 
                                 the defining force of a new…</p>
                     </div>
+                </div>
+                <div >
+                    <ul class="pagination">
+                        <li ><a href="#">Next</a></li>
+                        <li class="none" ><a href="#">1</a></li>
+                        <li class="none" ><a href="#">2</a></li>
+                        <li class="none"><a href="#">3</a></li>
+                        <li class="none"><a href="#">4</a></li>
+                        <li class="none"><a href="#">5</a></li>
+                        <li ><a href="#">Preview</a></li>
+                    </ul>
                 </div>
                 
            </div>
-        </div>
-        <div class="follow-us">
-            <h3 class="bold font-24">Follow US</h3>
-            <hr class="clicked">
-            <div class="flex flex-column gap-40">
-                <div class="single-ad flex">
-                    <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
-                        <p class="category bg-indigo">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                            
-                            </div>
+
+           <!-- pagination -->
+           <section class="pagination-sec">
+           
+           </section>
+        
+            <div class="follow-us latest-2">
+                <h3 class="bold font-24 follow-title">Follow US</h3>
+                
+                <div class="flex flex-column follow">
+                <div class="follow-1">
+                    <div class="flex flex-column gap-40">
+                        <div class="follow-post single-ad flex">
+                        <img src="asset/Image-2.png" alt="">
+                            <div class="flex flex-column">
+                                <p class="category bg-indigo">Travel</p>
+                                <h3>Together happy feelings 
+                                continue juvenile one had</h3>
+                                <div class="author grey">
+                                    <img src="asset/aamzahid.jpg" alt="">
+                                    <p>Al Mahmud</p>
+                                
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="single-ad flex">
-                    <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
-                        <p class="category bg-indigo">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                            
-                            </div>
+                    <div class="follow-post single-ad flex">
+                        <img src="asset/Image-2.png" alt="">
+                        <div class="flex flex-column">
+                            <p class="category bg-indigo">Travel</p>
+                            <h3>Together happy feelings 
+                                continue juvenile one had</h3>
+                                <div class="author grey">
+                                    <img src="asset/aamzahid.jpg" alt="">
+                                    <p>Al Mahmud</p>
+                                
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="single-ad flex">
-                    <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
-                        <p class="category bg-indigo">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                            
-                            </div>
+                    <div class="follow-post single-ad flex">
+                        <img src="asset/Image-2.png" alt="">
+                        <div class="flex flex-column">
+                            <p class="category bg-indigo">Travel</p>
+                            <h3>Together happy feelings 
+                                continue juvenile one had</h3>
+                                <div class="author grey">
+                                    <img src="asset/aamzahid.jpg" alt="">
+                                    <p>Al Mahmud</p>
+                                
+                                </div>
+                        </div>
                     </div>
-                </div>
-             </div>
-            <div class="cate">
-                <h3 class="cate-head bold font-24">Catergory</h3>
-                <div class="flex flex-column gap-15">
-                   <div class="flex justify-between">
-                       <p>Technologoy</p>
-                       <p>(10)</p>
-                   </div>
-                   <hr>
-                   <div class="flex justify-between">
-                       <p>Technologoy</p>
-                       <p>(10)</p>
-                   </div>
-                   <hr>
-                   <div class="flex justify-between">
-                       <p>Technologoy</p>
-                       <p>(10)</p>
-                   </div>
-                   <hr>
-                   <div class="flex justify-between">
-                       <p>Technologoy</p>
-                       <p>(10)</p>
-                   </div>
-                   <hr>
-                   <div class="flex justify-between">
-                       <p>Technologoy</p>
-                       <p>(10)</p>
-                   </div>
-                   <hr>
-                   
-                   
+                 </div>
+                <div class="cate">
+                    <h3 class="cate-head bold font-24">Catergory</h3>
+                    <div class="flex flex-column gap-15">
+                       <div class="flex justify-between">
+                           <p>Technologoy</p>
+                           <p>(10)</p>
+                       </div>
+                       <hr>
+                       <div class="flex justify-between">
+                           <p>Technologoy</p>
+                           <p>(10)</p>
+                       </div>
+                       <hr>
+                       <div class="flex justify-between">
+                           <p>Technologoy</p>
+                           <p>(10)</p>
+                       </div>
+                       <hr>
+                       <div class="flex justify-between">
+                           <p>Technologoy</p>
+                           <p>(10)</p>
+                       </div>
+                       <hr>
+                       <div class="flex justify-between">
+                           <p>Technologoy</p>
+                           <p>(10)</p>
+                       </div>
+                       <hr>
+                       
+                       
+                    </div>
                 </div>
             </div>
 <!-- side ad -->
-            <div class="side-ad flex flex-column justify-between align-center">
-                <h2 class="country-title">Post Blocks</h2>
-                <p class="para1">Best gutenberg blocks ever for news, magagine block</p>
-                <div class="sidead-button">
-                    <a href="#">Download Now</a>
+                    <div class="follow-2">
+                <div class="side-ad">
+                    <div class="side-ad-content flex flex-column justify-between align-center">
+                        <img class="side-ad-img" src="asset/postx-logo.svg" alt="">
+                        <h3 class="font-20">Best gutenberg blocks ever for news, magagine block</h3>
+                        <div class="sidead-button">
+                            <div class="side-btn"><a href="#">Download Now</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+              <div class="tag-section">
+                <h3 class="bold font-24">Tags</h3>
+                
+                <div class="tags flex justify-between align-center ">
+                    
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    <p class="bg-indigo ">Fashion</i> 
+                    
+    
+                </div>
+              </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -565,7 +649,145 @@
 </section>
  
     </main>
+<!-- main end  -->
 
+<!-- foooter section  -->
+<footer class="footer ">
+    <div class="footer-section container-width">
+        <div class="footlogo">
+            <img src="asset/postx-logo.svg" alt="">
+            <p class=" font-16">With grand cities, plenty of opportunities for adventure and some of the best hiking...</p><br>
+            <p class=" font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+        </div>
+       
+        <div class="popular-foot">
+            <h2 class="bold font-24">Popular Post</h2>
+            <hr class="clicked">
+            <div class="flex flex-column gap-40">
+                <div class="single-ad flex">
+                    <img src="asset/Image-2.png" alt="">
+                    <div class="flex flex-column">
+                        
+                        <h3>Day advantages ender
+                            icient eat expression</h3>
+                            <div class="author ">
+                                <img src="asset/aamzahid.jpg" alt="">
+                                <p>Al Mahmud</p>
+                            
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="single-ad flex">
+                    <img src="asset/Image-2.png" alt="">
+                    <div class="flex flex-column">
+                        
+                        <h3>Own handsome delicate 
+                            its property mistress</h3>
+                            <div class="author ">
+                                <img src="asset/aamzahid.jpg" alt="">
+                                <p>Al Mahmud</p>
+                            
+                            </div>
+                    </div>
+                </div>
+             </div>
+            
+          
+        </div>
+        <!-- most views  -->
+        <div class="popular-foot-2">
+            <h2 class="bold font-24">Most Views</h2>
+            <hr class="clicked">
+            <div class="flex flex-column gap-40">
+                <div class="single-ad flex">
+                   
+                    <div class="flex flex-column">
+                        
+                        <h3>Day advantages ender
+                            icient eat expression</h3>
+                            <div class="author ">
+                                <img src="asset/aamzahid.jpg" alt="">
+                                <p>Al Mahmud</p>
+                            
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="single-ad flex">
+                    
+                    <div class="flex flex-column">
+                        
+                        <h3>Own handsome delicate 
+                            its property mistress</h3>
+                            <div class="author ">
+                                <img src="asset/aamzahid.jpg" alt="">
+                                <p>Al Mahmud</p>
+                            
+                            </div>
+                    </div>
+                </div>
+             </div>
+            
+          
+        </div>
+
+       
+      
+    </div>
+    <hr>
+
+ 
+    <div class="foot-end container-width">
+        <p class="font-14 copy">Copyright © 2023 | Designed By WPXPO</p>
+
+        <div class="foot-menu-section">
+            <ul class=" foot-menu flex justify-between align-center">
+                <li><a href="">Home</a></li>
+                <li><a href="">Travel</a></li>
+                
+                <div class="flex justify-center align-center">
+                    <li><a href="">Fashion</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn white">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Category 1</a>
+                        <a href="#">Category 2</a>
+                        <a href="#">Category 3</a>
+                    </div>
+                </div>
+                </div>
+                <div class="flex justify-center align-center">
+                    <li><a href="">Lifestyle</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn white">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Category 1</a>
+                        <a href="#">Category 2</a>
+                        <a href="#">Category 3</a>
+                    </div>
+                </div>
+                </div>
+                                
+                <li><a href="">Contact US</a></li>
+            </ul>
+        </div>
+
+        <div class="social-foot">
+                
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                
+        </div>
+        
+    </div>
+</footer>
 
 
 
