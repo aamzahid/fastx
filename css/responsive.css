@@ -55,12 +55,25 @@
     display: none;
    }
 
-
+   .pagination{
+    display: flex;
+    gap: 8px;
+    margin: 10px 10px;
+    justify-content:center;
+    position: relative;
+    bottom: 570px;
+    list-style: none;
+}
    .latest-gallery{
-    grid-template-areas: "latest-1 latest-1 "
+    grid-template-areas: "latest-1 latest-2 "
                            
-                        "  latest-2 latest-2";
+                        "  latest-3 latest-3";
     gap: 61px;
+}
+
+.latest-3{
+    padding:10px;
+    margin-top: 30px;
 }
    .follow{
     gap: 50px;
@@ -163,7 +176,8 @@
 
 .latest-gallery{
     grid-template-areas: "latest-1 "
-                        "latest-2";
+                        "latest-2"
+                        "latest-3";
     gap: 61px;
 }
 .latest-1{
