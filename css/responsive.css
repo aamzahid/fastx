@@ -18,14 +18,12 @@
 /* hero  */
     .hero-post{
     grid-template-areas:
-    "post-one post-one "
-    "post-two post-three"
+    "post-one post-one post-one "
+    "post-two post-three post-four"
     ;
     }
 
-    .hero-post-3{
-    flex-direction: column;
-    }
+   
 
 
     /* post ad  */
@@ -96,12 +94,15 @@
    }
 
    .footer-section{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
    }
    .popular-foot-2{
     display: none;
    }
+   
 }
+   
+
   
 /* mobile responsive  */
 
@@ -127,12 +128,13 @@
         grid-template-areas:
         "post-one "
         "post-two "
-        "post-three";
+        "post-three"
+        "post-four";
     }
-    .hero-post-3{
-        flex-direction: column;
-    }
-
+   
+.post-inside>h3{
+    font-size: 16px;
+}
 
    .single-ad{
     flex-direction: column;

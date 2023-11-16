@@ -3,191 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastX</title>
+    <title>FastX-final</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/18feab2c0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
         
-    <header>
-       <section class="top-area">
-        <div class="header-top container-width flex justify-between align-center">
+    <header class="top-area ">
+       <div class="header-top container-width flex justify-between align-center">
             <div class="logo flex align-center ">
                 <div class="burger" >
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div>
+                <a>
                     <img class="logo-img" src="asset/postx-logo.svg" alt="">
-                </div>
+                </a>
             </div>
-            <div class="head-menu ">
-                <ul class=" menu flex justify-between align-center">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Travel</a></li>
-                    <div class="flex justify-center align-center">
-                        <li><a href="">Fashion</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Category 1</a>
-                            <a href="#">Category 2</a>
-                            <a href="#">Category 3</a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="flex justify-center align-center">
-                        <li><a href="">Lifestyle</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn ">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Category 1</a>
-                            <a href="#">Category 2</a>
-                            <a href="#">Category 3</a>
-                        </div>
-                    </div>
-                    </div>
+            <nav class="head-menu" >
+               
+                    <ul class=" menu flex justify-between align-center">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Travel</a></li>
+                        
+                        <li class="dropdown"><a href="">Fashion</a><span> <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Cate</a></li>
+                                <li><a href="#">Cate</a></li>
+                                <li><a href="#">Cate</a></li>
+                            </ul>
                     
-                                    
-                    <li><a href="">Contact US</a></li>
-                </ul>
-            </div>
+                        <li class="dropdown"><a href="">Lifestyle</a><span> <i class="fa-solid fa-chevron-down"></i></span>
+                        
+                            <ul class="dropdown-content">
+                                <li><a href="#">Cate</a></li>
+                                <li><a href="#">Cate</a></li>
+                                <li><a href="#">Cate</a></li>
+                            </ul>
+                        </li>
+                                 
+                        <li><a href="">Contact US</a></li>
+                    </ul>
+                
+            </nav>
             <div class="social flex justify-between align-center">
-                <div class="social-icon flex">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="social-icon ">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
-                <div class="s-btn">
+               
                     <a class="subscribe-button" href="#">Subscribe</a>
-                </div>
+                
             </div>
 
         </div>
-       </section>
+</header>
 
        <!-- hero  -->
-       <section class="hero container-width">
-        <div class="hero-post ">
-            <div class="hero-post-1 relative">
+      
+        <div class="hero-post container-width">
+            <div class="hero-post-1 relative no-bg">
                
-                <img class="h-w contain" src="asset/Image-1.png" alt="">
+                <img style="opacity: 0.7;" class="h-w contain" src="asset/Image-1.png" alt=" Mountain">
                 <div class="post-inside absolute">
-                    <p class="category bg-sky">Technologoy</p>
+                    <a class="category bg-sky" href="">Technologoy</a>
 
-                    <h3 class="font-30">Mercedes’ Lead Designer Talks 
+                    <h3 class="font-30 hero-title">Mercedes’ Lead Designer Talks 
                         to Euronews About Future</h3>
-                    <div class=" hero-author font-14 white ">
-                        <img class="h-w-25" src="asset/aamzahid.jpg" alt="">
-                        <p>Al Mahmud</p>
-                        <p>|</p>
-                        <p>May 15,2023</p>
-                    </div>
+                    <ul class="author  white hero" style="font-size: 14px;">
+                        <li class="flex justify-between align-center">
+                            <a  href="#" class="">
+                            <img style="width: 25px ;height: 25px;" src="asset/aamzahid.jpg" alt="">
+                            Al Mahmud
+                            </a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <span class="post-date">May 15,2023</span>
+                        </li>
+                    </ul>
+                   
                 </div>
             </div>
-            <div class="hero-post-2 relative">
+            <div class="hero-post-2 relative no-bg ">
                
-                <img class="h-w contain" src="asset/Image.png" alt="">
+                <img style="opacity: 0.7;" class="h-w contain" src="asset/Image.png" alt="Resort">
                 <div class="post-inside absolute">
-                    <p class="category bg-blue">Lifestyle</p>
+                    <a class="category bg-blue" href="">Lifestyle</a>
 
-                    <h3 class="font-22">Mercedes’ Lead Designer Talks 
-                        to Euronews About Future</h3>
-                    <div class="author white font-12">
-                        <img src="asset/aamzahid.jpg" alt="">
-                        <p>Al Mahmud</p>
-                        <p>|</p>
-                        <p>May 15,2023</p>
-                    </div>
+                    <h3 class="font-22">Assure polite his really and 
+                        others figure though</h3>
+                    <ul class="author  white hero">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
                 </div>
             </div>
-           <div class="hero-post-3 flex">
-            <div class=" relative">
+           
+            <div class="hero-post-3 relative no-bg">
                
-                <img class="h-w contain" src="asset/Image-2.png" alt="">
+                <img style="opacity: 0.7;" class="h-w contain" src="asset/Image-2.png" alt="Bridge">
                 <div class="post-inside absolute">
-                    <p class="category bg-orange">Travel</p>
+                    <a class="category bg-orange" href="">Travel</a>
 
-                    <h3 class="font-22">Mercedes’ Lead Designer Talks 
-                        to Euronews About Future</h3>
-                    <div class="author white font-12">
-                        <img src="asset/aamzahid.jpg" alt="">
-                        <p>Al Mahmud</p>
-                        <p>|</p>
-                        <p>May 15,2023</p>
-                    </div>
+                    <h3 class="font-18">18 Top Fall Fashion 
+                        from New York Fashion</h3>
+
+                    <ul class="author  white hero">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
                 </div>
             </div>
-            <div class="relative">
+            <div class="hero-post-4 relative">
                
-                <img class="h-w contain" src="asset/Image-3.png" alt="">
+                <img  class="h-w contain" src="asset/Image-2.png" alt="Ocean Rome">
                 <div class="post-inside absolute">
-                    <p class="category bg-orange">Travel</p>
+                    <a class="category bg-orange" href="">Travel</a>
 
-                    <h3 class="font-22">Mercedes’ Lead Designer Talks 
-                        to Euronews About Future</h3>
-                    <div class="author white font-12">
-                        <img src="asset/aamzahid.jpg" alt="">
-                        <p>Al Mahmud</p>
-                        <p>|</p>
-                        <p>May 15,2023</p>
-                    </div>
+                    <h3 class="font-18">18 Top Fall Fashion 
+                        from New York Fashion</h3>
+
+                    <ul class="author  white hero">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
                 </div>
             </div>
-           </div>
+          
           
         </div>
 
-       </section>
-    </header>
+    
 
-    <main>
+
+
         <!-- post ad -->
         <div class="post-ad container-width">
             <div class="post-ads flex justify-between align-center">
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
                     <div class="single-ad-text flex flex-column">
-                        <p class="category bg-indigo">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
+                        <a href="#" class="category bg-indigo">Travel</a>
+                        <a class="post-title" href="#">Together happy feelings 
+                            continue juvenile one had</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
                             
                             </div>
                     </div>
                 </div>
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
-                    <div class="single-ad-text">
-                        <p class="category bg-green">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                              
+                    <div class="single-ad-text flex flex-column">
+                        <a href="#" class="category bg-green">Travel</a>
+                        <a class="post-title" href="#">Own handsome delicate 
+                            its property mistress</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            
                             </div>
                     </div>
                 </div>
                 <div class="single-ad flex">
                     <img src="asset/Image-2.png" alt="">
                     <div class="single-ad-text flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3>Together happy feelings 
-                            continue juvenile one had</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                              
+                        <a href="#" class="category bg-purple">Travel</a>
+                        <a class="post-title" href="#">Day advantages ender
+                            icient eat expression</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            
                             </div>
                     </div>
                 </div>
@@ -197,33 +221,46 @@
  <!-- post-grid  -->
         <section class="post-grid container-width">
             <div class="gallery grid ">
-                <div class="gallery-1">
-                    <h3 class="bold font-24">Life Style</h3>
-                    <hr class="clicked">
-                    <img class="mar-30" src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                            from New York Fashion</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                                <p>|</p>
-                                <p>May 15,2023</p>
-                              
-                            </div>
+                
+                <div class="gallery-1 ">
+                    <div class="">
+                        <h3 class="bold font-24 line">Life Style</h3>
+                    </div>
+                    
+                   <div class="gallery-posts">
+                    <div>
+                        <img class="mar-30" src="asset/Image-2.png" alt="">
+                        <div class="flex flex-column gap">
+                        <a href="#" class="category bg-purple">Travel</a>
+                        <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                            from New York Fashion</a>
+                            <ul class="author ">
+                                <li class="flex justify-between align-center">
+                                    <a  href="#">
+                                    <img class=" " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <span>May 15,2023</span>
+                                </li>
+                        </ul>
+                        </div>
                     </div>
                     <!-- small post  -->
                      <div class="flex flex-column gap-40 ">
                         <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
-                                <p class="category bg-indigo">Travel</p>
-                                <h3>Together happy feelings 
-                                    continue juvenile one had</h3>
-                                    <div class="author grey">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
+                                <a href="#" class="category bg-indigo">Travel</a>
+                                <a class="post-title" href="#">Together happy feelings 
+                                    continue juvenile one had</a>
+                                    <div class="author">
+                                        <a  href="#">
+                                        <img class="# " src="asset/aamzahid.jpg" alt="">
+                                        Al Mahmud
+                                        </a>
                                     
                                     </div>
                             </div>
@@ -231,81 +268,98 @@
                         <div class="single-ad flex small">
                             <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
-                                <p class="category bg-indigo">Travel</p>
-                                <h3>Together happy feelings 
-                                    continue juvenile one had</h3>
-                                    <div class="author grey">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
+                                <a class="category bg-indigo" href="#">Travel</a>
+                                <a class="post-title" href="#">Day advantages ender
+                                    icient eat expression</a>
+                                    <div class="author">
+                                        <a  href="#">
+                                        <img class="# " src="asset/aamzahid.jpg" alt="">
+                                        Al Mahmud
+                                        </a>
                                     
                                     </div>
                             </div>
                         </div>
                      </div>
+                   </div>
                 </div>
                 <div class="gallery-2">
-                    <h3 class="bold font-24">Technology</h3>
-                    <hr class="clicked">
-                    <img class="mar-30" src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                            from New York Fashion</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                                <p>|</p>
-                                <p>May 15,2023</p>
-                              
+                    <h3 class="bold font-24 line">Technology</h3>
+                    
+                    <div class="gallery-posts">
+                        <div>
+                            <img class="mar-30" src="asset/Image-2.png" alt="">
+                            <div class="flex flex-column gap">
+                            <a href="#" class="category bg-purple">Travel</a>
+                            <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                                from New York Fashion</a>
+                                <ul class="author ">
+                                    <li class="flex justify-between align-center">
+                                        <a  href="#">
+                                        <img class=" " src="asset/aamzahid.jpg" alt="">
+                                        Al Mahmud
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>May 15,2023</span>
+                                    </li>
+                            </ul>
                             </div>
-                    </div>
+                        </div>
+                        <!-- small post  -->
+                         <div class="flex flex-column gap-40 ">
+                            <div class="single-ad flex small">
+                                <img src="asset/Image-2.png" alt="">
+                                <div class="flex flex-column">
+                                    <a href="#" class="category bg-indigo">Travel</a>
+                                    <a class="post-title" href="#">Own handsome delicate 
+                                        its property mistress</a>
+                                        <div class="author">
+                                            <a  href="#">
+                                            <img class="# " src="asset/aamzahid.jpg" alt="">
+                                            Al Mahmud
+                                            </a>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="single-ad flex small">
+                                <img src="asset/Image-2.png" alt="">
+                                <div class="flex flex-column">
+                                    <a class="category bg-indigo" href="#">Travel</a>
+                                    <a class="post-title" href="#">Together happy feelings 
+                                        continue juvenile one had</a>
+                                        <div class="author">
+                                            <a  href="#">
+                                            <img class="# " src="asset/aamzahid.jpg" alt="">
+                                            Al Mahmud
+                                            </a>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                         </div>
+                       </div>
                     <!-- small post  -->
-                    <div class="flex flex-column gap-40">
-                        <div class="single-ad flex small">
-                            <img src="asset/Image-2.png" alt="">
-                            <div class="flex flex-column">
-                                <p class="category bg-indigo">Travel</p>
-                                <h3>Together happy feelings 
-                                    continue juvenile one had</h3>
-                                    <div class="author grey">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="single-ad flex small">
-                            <img src="asset/Image-2.png" alt="">
-                            <div class="flex flex-column">
-                                <p class="category bg-indigo">Travel</p>
-                                <h3 class="">Together happy feelings 
-                                    continue juvenile one had</h3>
-                                    <div class="author grey">
-                                        <img src="asset/aamzahid.jpg" alt="">
-                                        <p>Al Mahmud</p>
-                                    
-                                    </div>
-                            </div>
-                        </div>
-                     </div>
+                    
                 </div>
                 <div class="gallery-3">
-                    <h3 class="bold font-24">Follow Us</h3>
-                    <hr class="clicked">
+                    <h3 class="bold font-24 line">Follow Us</h3>
+                    
                     <div class="flex flex-column gallery-3-side">
                         <div class="side-gallery-content flex flex-column">
-                            <div class="follow-social flex ">
-                                <p class="bg-sky"><i class="fa-brands fa-facebook-f"></i> Facebook</p>
-                                <p class="bg-sky "><i class="fa-brands fa-twitter"></i> Twitter</p>
-                                <p class="bg-blue"><i class="fa-brands fa-tiktok"></i> Tiktok</p>
-                                <p class="bg-sky"><i class="fa-brands fa-linkedin-in"></i> linkedin</p>
-                                <p class="bg-orange"><i class="fa-brands fa-youtube"></i> Youtube</p>
-                                <p class="bg-orange"><i class="fa-brands fa-reddit"></i> Redit</p>
-                                <p class="bg-purple"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                                <p class="bg-orange"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                                <p class="bg-indigo"><i class="fa-brands fa-dribbble"></i> Dribbble</p>
-                               <p class="bg-sky"><i class="fa-brands fa-instagram"></i> Instagram</p>
-                               <p class="bg-green"><i class="fa-brands fa-github"></i> Github</p>
+                            <div class="follow-social flex">
+                                <a class="bg-sky" href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                                <a class="bg-sky" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                                <a class="bg-blue" href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                                <a class="bg-sky" href="#"><i class="fa-brands fa-linkedin-in"></i> linkedin</a>
+                                <a class="bg-orange" href="#"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                                <a class="bg-orange" href="#"><i class="fa-brands fa-reddit"></i> Redit</a>
+                                <a class="bg-purple" href="#"><i class="fa-brands fa-dribbble"></i> Dribbble</a>
+                                <a class="bg-orange" href="#"><i class="fa-brands fa-dribbble"></i> Dribbble</a>
+                                <a class="bg-indigo" href="#"><i class="fa-brands fa-dribbble"></i> Dribbble</a>
+                               <a class="bg-sky" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                               <a class="bg-green" href="#"><i class="fa-brands fa-github"></i> Github</a>
         
                             </div>
         
@@ -313,43 +367,51 @@
                          
                             <div class="border-2">
                                 <div class="popular-post flex flex-column" >
-                                    <h3 class="font-24 popular-head">Popular Posts</h3>
-                                    <div>
-                                        <h3 class="font-16">Day advantages ender adjsd
-                                            icient eat expression</h3>
-                                            <div class="author grey font-12 ">
-                                                <img src="asset/aamzahid.jpg" alt="">
-                                                <p>Al Mahmud</p>
+                                    <h3 class="bold font-24">Popular Posts</h3>
+                                    <div class="popular-content post-separator">
+                                        <a class="post-title">Day advantages ender adjsd
+                                            icient eat expression</a>
+                                            <div class="author">
+                                                <a  href="#">
+                                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                                Al Mahmud
+                                                </a>
                                             
                                             </div>
-                                            <hr class="popular-sep">
+                                            
                                     </div>
-                                    <div>
-                                        <h3 class="font-16">Day advantages ender adjsd
-                                            icient eat expression</h3>
-                                            <div class="author grey font-12 ">
-                                                <img src="asset/aamzahid.jpg" alt="">
-                                                <p>Al Mahmud</p>
+                                    <div class="post-separator">
+                                        <a class="post-title" href="#">Day advantages ender adjsd
+                                            icient eat expression</a>
+                                            <div class="author">
+                                                <a  href="#">
+                                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                                Al Mahmud
+                                                </a>
                                             
                                             </div>
-                                            <hr class="popular-sep">
+                                            
                                     </div>
-                                    <div>
-                                        <h3 class="font-16">Day advantages ender adjsd
-                                            icient eat expression</h3>
-                                            <div class="author grey font-12 ">
-                                                <img src="asset/aamzahid.jpg" alt="">
-                                                <p>Al Mahmud</p>
+                                    <div class="post-separator">
+                                        <a class="post-title" href="#">Day advantages ender adjsd
+                                            icient eat expression</a>
+                                            <div class="author">
+                                                <a  href="#">
+                                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                                Al Mahmud
+                                                </a>
                                             
                                             </div>
-                                            <hr class="popular-sep">
+                                            
                                     </div>
-                                    <div>
-                                        <h3 class="font-16">Day advantages ender adjsd
-                                            icient eat expression</h3>
-                                            <div class="author grey font-12 ">
-                                                <img src="asset/aamzahid.jpg" alt="">
-                                                <p>Al Mahmud</p>
+                                    <div class="post-separator">
+                                        <a class="post-title" href="#">Day advantages ender adjsd
+                                            icient eat expression</a>
+                                            <div class="author">
+                                                <a  href="#">
+                                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                                Al Mahmud
+                                                </a>
                                             
                                             </div>
                                            
@@ -368,7 +430,7 @@
 
         <!-- ad section  -->
 
-        <section class="ad-section container-width">
+        <div class="ad-section container-width">
             <div class="ad">
                 <div class="ad-content">
                     <div class="flex justify-between align-center">
@@ -385,7 +447,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
 
 <!-- latest post  -->
@@ -393,26 +455,32 @@
     <div class="latest ">
         
         
-       
+        
+        
         <div class="latest-gallery grid ">
             
            <div class=" latest-1">
-            <h3 class="bold font-24">Life Style</h3>
-            <hr class="clicked latest-hr ">
+            <h3 class="bold font-24 line" >Life Style</h3>
+               <div class="latest-1-post">
                 <div>
                     <img class="mar-30" src="asset/Image-2.png" alt="">
                     <div class="latest-content flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                            from New York Fashion</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                                <p>|</p>
-                                <p>May 15,2023</p>
-                              
-                            </div>
-                            <p >Modern technology has become 
+                        <a href="#" class="category bg-purple">Travel</a>
+                        <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                            from New York Fashion</a>
+                            <ul class="author ">
+                                <li class="flex justify-between align-center">
+                                    <a  href="#">
+                                    <img class=" " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <span>May 15,2023</span>
+                                </li>
+                        </ul>
+                            <p class="excerpt" >Modern technology has become 
                                 a total phenomenon for civilization, 
                                 the defining force of a new…</p>
                     </div>
@@ -420,17 +488,22 @@
                 <div>
                     <img class="mar-30" src="asset/Image-2.png" alt="">
                     <div class="latest-content flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                            from New York Fashion</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                                <p>|</p>
-                                <p>May 15,2023</p>
-                              
-                            </div>
-                            <p >Modern technology has become 
+                        <a class="category bg-purple" href="#">Travel</a>
+                        <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                            from New York Fashion</a>
+                            <ul class="author ">
+                                <li class="flex justify-between align-center">
+                                    <a  href="#">
+                                    <img class=" " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <span>May 15,2023</span>
+                                </li>
+                        </ul>
+                            <p class="excerpt" >Modern technology has become 
                                 a total phenomenon for civilization, 
                                 the defining force of a new…</p>
                     </div>
@@ -438,100 +511,130 @@
                 <div>
                     <img class="mar-30" src="asset/Image-2.png" alt="">
                     <div class="latest-content flex flex-column gap">
-                        <p class="category bg-purple">Travel</p>
-                        <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                            from New York Fashion</h3>
-                            <div class="author grey">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
-                                <p>|</p>
-                                <p>May 15,2023</p>
-                              
-                            </div>
-                            <p >Modern technology has become 
+                        <a class="category bg-purple" href="#">Travel</a>
+                        <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                            from New York Fashion</a>
+                            <ul class="author ">
+                                <li class="flex justify-between align-center">
+                                    <a  href="#">
+                                    <img class=" " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <span>May 15,2023</span>
+                                </li>
+                        </ul>
+                            <p class="excerpt">Modern technology has become 
                                 a total phenomenon for civilization, 
                                 the defining force of a new…</p>
                     </div>
                 </div>
-
-                
-           </div>
-           <div class="latest-2">
-            
-            <div>
+                <div>
                 <img class="mar-30" src="asset/Image-2.png" alt="">
                 <div class="latest-content flex flex-column gap">
-                    <p class="category bg-purple">Travel</p>
-                    <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                        from New York Fashion</h3>
-                        <div class="author grey">
-                            <img src="asset/aamzahid.jpg" alt="">
-                            <p>Al Mahmud</p>
-                            <p>|</p>
-                            <p>May 15,2023</p>
-                          
-                        </div>
-                        <p >Modern technology has become 
+                    <a class="category bg-purple" href="#">Travel</a>
+                    <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                        from New York Fashion</a>
+                        <ul class="author ">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
+                        <p class="excerpt">Modern technology has become 
                             a total phenomenon for civilization, 
                             the defining force of a new…</p>
                 </div>
-            </div>
-            <div>
+                </div>
+                <div>
                 <img class="mar-30" src="asset/Image-2.png" alt="">
                 <div class="latest-content flex flex-column gap">
-                    <p class="category bg-purple">Travel</p>
-                    <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                        from New York Fashion</h3>
-                        <div class="author grey">
-                            <img src="asset/aamzahid.jpg" alt="">
-                            <p>Al Mahmud</p>
-                            <p>|</p>
-                            <p>May 15,2023</p>
-                          
-                        </div>
-                        <p >Modern technology has become 
+                    <a class="category bg-purple" href="#">Travel</a>
+                    <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                        from New York Fashion</a>
+                        <ul class="author ">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
+                        <p class="excerpt">Modern technology has become 
                             a total phenomenon for civilization, 
                             the defining force of a new…</p>
                 </div>
-            </div>
-            <div>
+                </div>
+                <div>
                 <img class="mar-30" src="asset/Image-2.png" alt="">
                 <div class="latest-content flex flex-column gap">
-                    <p class="category bg-purple">Travel</p>
-                    <h3 class="font-22 bold">18 Top Fall Fashion Trends 
-                        from New York Fashion</h3>
-                        <div class="author grey">
-                            <img src="asset/aamzahid.jpg" alt="">
-                            <p>Al Mahmud</p>
-                            <p>|</p>
-                            <p>May 15,2023</p>
-                          
-                        </div>
-                        <p >Modern technology has become 
+                    <a class="category bg-purple" href="#">Travel</a>
+                    <a class="post-title-big" href="#">18 Top Fall Fashion Trends 
+                        from New York Fashion</a>
+                        <ul class="author ">
+                            <li class="flex justify-between align-center">
+                                <a  href="#">
+                                <img class=" " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>May 15,2023</span>
+                            </li>
+                    </ul>
+                        <p class="excerpt">Modern technology has become 
                             a total phenomenon for civilization, 
                             the defining force of a new…</p>
                 </div>
+                </div>
+                <div >
+                    <ul class="pagination">
+                        <li ><a href="#">Next</a></li>
+                        <li class="none" ><a href="#">1</a></li>
+                        <li class="none" ><a href="#">2</a></li>
+                        <li class="none"><a href="#">3</a></li>
+                        <li class="none"><a href="#">4</a></li>
+                        <li class="none"><a href="#">5</a></li>
+                        <li ><a href="#">Preview</a></li>
+                    </ul>
+                </div>
+               </div>
             </div>
-           </div>
            
            
           
         
             <div class="follow-us latest-3">
+              
+        
+                <div class="follow">
                 <h3 class="bold font-24 follow-title">Follow US</h3>
-                
-                <div class="flex flex-column follow">
                 <div class="follow-1">
                     <div class="flex flex-column gap-40">
                         <div class="follow-post single-ad flex">
                         <img src="asset/Image-2.png" alt="">
                             <div class="flex flex-column">
-                                <p class="category bg-indigo">Travel</p>
-                                <h3>Together happy feelings 
-                                continue juvenile one had</h3>
-                                <div class="author grey">
-                                    <img src="asset/aamzahid.jpg" alt="">
-                                    <p>Al Mahmud</p>
+                                <a class="category bg-indigo" href="#">Travel</a>
+                                <a class="post-title" href="#">Together happy feelings 
+                                continue juvenile one had</a>
+                                <div class="author">
+                                    <a  href="#">
+                                    <img class="# " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
                                 
                                 </div>
                         </div>
@@ -539,12 +642,14 @@
                     <div class="follow-post single-ad flex">
                         <img src="asset/Image-2.png" alt="">
                         <div class="flex flex-column">
-                            <p class="category bg-indigo">Travel</p>
-                            <h3>Together happy feelings 
-                                continue juvenile one had</h3>
-                                <div class="author grey">
-                                    <img src="asset/aamzahid.jpg" alt="">
-                                    <p>Al Mahmud</p>
+                            <a class="category bg-indigo" href="#">Travel</a>
+                            <a class="post-title" href="#">Together happy feelings 
+                                continue juvenile one had</a>
+                                <div class="author">
+                                    <a  href="#">
+                                    <img class="# " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
                                 
                                 </div>
                         </div>
@@ -552,12 +657,14 @@
                     <div class="follow-post single-ad flex">
                         <img src="asset/Image-2.png" alt="">
                         <div class="flex flex-column">
-                            <p class="category bg-indigo">Travel</p>
-                            <h3>Together happy feelings 
-                                continue juvenile one had</h3>
-                                <div class="author grey">
-                                    <img src="asset/aamzahid.jpg" alt="">
-                                    <p>Al Mahmud</p>
+                            <a class="category bg-indigo" href="#">Travel</a>
+                            <a class="post-title" href="#">Together happy feelings 
+                                continue juvenile one had</a>
+                                <div class="author">
+                                    <a  href="#">
+                                    <img class="# " src="asset/aamzahid.jpg" alt="">
+                                    Al Mahmud
+                                    </a>
                                 
                                 </div>
                         </div>
@@ -566,42 +673,45 @@
                 <div class="cate">
                     <h3 class="cate-head bold font-24">Catergory</h3>
                     <div class="flex flex-column gap-15">
-                       <div class="flex justify-between">
-                           <p>Technologoy</p>
+                       <div class="flex justify-between post-separator">
+                           <a href="#" class="cate-title">Technologoy</a>
                            <p>(10)</p>
                        </div>
-                       <hr>
-                       <div class="flex justify-between">
-                           <p>Technologoy</p>
+                       
+                       <div class="flex justify-between post-separator">
+                           <a href="#" class="cate-title">Technologoy</a>
                            <p>(10)</p>
                        </div>
-                       <hr>
-                       <div class="flex justify-between">
-                           <p>Technologoy</p>
+                       
+                       <div class="flex justify-between post-separator">
+                           <a href="#" class="cate-title">Technologoy</a>
                            <p>(10)</p>
                        </div>
-                       <hr>
-                       <div class="flex justify-between">
-                           <p>Technologoy</p>
+                       
+                       <div class="flex justify-between post-separator">
+                           <a href="#" class="cate-title">Technologoy</a>
                            <p>(10)</p>
                        </div>
-                       <hr>
-                       <div class="flex justify-between">
-                           <p>Technologoy</p>
+                       
+                       <div class="flex justify-between post-separator">
+                           <a href="#" class="cate-title">Technologoy</a>
                            <p>(10)</p>
                        </div>
-                       <hr>
+                       
                        
                        
                     </div>
                 </div>
             </div>
 <!-- side ad -->
-                    <div class="follow-2">
+            <div class="follow-2">
                 <div class="side-ad">
-                    <div class="side-ad-content flex flex-column justify-between align-center">
-                        <img class="side-ad-img" src="asset/postx-logo.svg" alt="">
-                        <h3 class="font-20">Best gutenberg blocks ever for news, magagine block</h3>
+                    <div class="side-ad-content ">
+                        <div class="flex flex-column align-center">
+                            <img class="side-ad-img" src="asset/postx-logo.svg" alt="">
+                        <a class="post-title-big" style="color: white;text-align: center;">#1 Full Site News 
+                            Magazine & Blog Theme</a>
+                        </div>
                         <div class="sidead-button">
                             <div class="side-btn"><a href="#">Download Now</a></div>
                         </div>
@@ -609,85 +719,80 @@
                 </div>
     
     
-              <div class="tag-section">
-                <h3 class="bold font-24">Tags</h3>
+                        <div  class="tag-section">
+                            <h3 class="bold font-24">Tags</h3>
                 
-                <div class="tags flex justify-between align-center ">
+                            <div class="tags ">
                     
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
-                    <p class="bg-indigo ">Fashion</i> 
+                            <ul class="tag-list">
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            </ul> 
                     
     
-                </div>
-              </div>
-                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div >
-        <ul class="pagination">
-            <li ><a href="#">Next</a></li>
-            <li class="none" ><a href="#">1</a></li>
-            <li class="none" ><a href="#">2</a></li>
-            <li class="none"><a href="#">3</a></li>
-            <li class="none"><a href="#">4</a></li>
-            <li class="none"><a href="#">5</a></li>
-            <li ><a href="#">Preview</a></li>
-        </ul>
-    </div>
+    
 </section>
  
-    </main>
+
 <!-- main end  -->
 
 <!-- foooter section  -->
 <footer class="footer ">
-    <div class="footer-section container-width">
+    <div class="footer-section container-width foot-separator">
         <div class="footlogo">
-            <img src="asset/postx-logo.svg" alt="">
+            <a href=""><img src="asset/postx-logo.svg" alt=""></a>
             <p class=" font-16">With grand cities, plenty of opportunities for adventure and some of the best hiking...</p><br>
             <p class=" font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
         </div>
        
         <div class="popular-foot">
-            <h2 class="bold font-24">Popular Post</h2>
-            <hr class="clicked">
+            <h2 class="bold font-24 line-2">Popular Post</h2>
+            
             <div class="flex flex-column gap-40">
-                <div class="single-ad flex">
+                <div class="single-ad flex foot-separator ">
                     <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
+                    <div class="flex flex-column justify-center gap-12">
                         
-                        <h3>Day advantages ender
-                            icient eat expression</h3>
-                            <div class="author ">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
+                        <a class="post-title" href="#">Day advantages ender
+                            icient eat expression</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
                             
                             </div>
                     </div>
                 </div>
-                <hr>
-                <div class="single-ad flex">
+                
+                <div class="single-ad flex ">
                     <img src="asset/Image-2.png" alt="">
-                    <div class="flex flex-column">
+                    <div class="flex flex-column justify-center gap-12 ">
                         
-                        <h3>Own handsome delicate 
-                            its property mistress</h3>
-                            <div class="author ">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
+                        <a class="post-title" href="#">Own handsome delicate 
+                            its property mistress</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
                             
                             </div>
                     </div>
@@ -697,33 +802,37 @@
           
         </div>
         <!-- most views  -->
-        <div class="popular-foot-2">
-            <h2 class="bold font-24">Most Views</h2>
-            <hr class="clicked">
+        <div class="popular-foot-2 ">
+            <h2 class="bold font-24 line-2">Most Views</h2>
+            
             <div class="flex flex-column gap-40">
-                <div class="single-ad flex">
+                <div class="single-ad flex foot-separator">
                    
-                    <div class="flex flex-column">
+                    <div class="flex flex-column justify-center gap-12">
                         
-                        <h3>Day advantages ender
-                            icient eat expression</h3>
-                            <div class="author ">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
+                        <a class="post-title" href="#">Day advantages ender adjwerjwehrjwe
+                            icient eat expression</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
                             
                             </div>
                     </div>
                 </div>
-                <hr>
+                
                 <div class="single-ad flex">
                     
-                    <div class="flex flex-column">
+                    <div class="flex flex-column justify-center gap-12">
                         
-                        <h3>Own handsome delicate 
-                            its property mistress</h3>
-                            <div class="author ">
-                                <img src="asset/aamzahid.jpg" alt="">
-                                <p>Al Mahmud</p>
+                        <a class="post-title" href="#">Day advantages ender adjwerjwehrjwe
+                            icient eat expression</a>
+                            <div class="author">
+                                <a  href="#">
+                                <img class="# " src="asset/aamzahid.jpg" alt="">
+                                Al Mahmud
+                                </a>
                             
                             </div>
                     </div>
@@ -733,10 +842,8 @@
           
         </div>
 
-       
-      
     </div>
-    <hr>
+    
 
  
     <div class="foot-end container-width">
